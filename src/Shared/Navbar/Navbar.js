@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
     const menuItems = <>
-        <li><a>Home</a></li>
-        <li><a>Add Task</a></li>
-        <li><a>My Task</a></li>
+        <li><Link to='/addTask'>Add Task</Link></li>
+        <li><Link to='/myTask'>My Task</Link></li>
+        <li><Link to='/complatedTasK'>Completed Tasks</Link></li>
+        <li><Link to='/register'>Register</Link></li>
+        <li><Link to='/login'>Login</Link></li>
     </>
 
     return (
@@ -20,7 +24,7 @@ function Navbar() {
             </div>
             <div className="navbar-end hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                {menuItems}
+                    {menuItems}
                 </ul>
             </div>
         </div>

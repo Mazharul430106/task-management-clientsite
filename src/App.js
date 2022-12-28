@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Shared/Navbar/Navbar';
+import Main from './Layout/Main';
+import { RouterProvider } from 'react-router-dom';
+import { router } from './Shared/Routes/Routes';
 
 function App() {
-  return (
+  return(
     <div className="App">
-      <h1>This is app components</h1>
-      <Navbar></Navbar>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
